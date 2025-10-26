@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindDeckNote - Intelligent Learning Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Roboto', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                DEFAULT: '#1976d2',
+                light: '#42a5f5',
+                dark: '#1565c0',
+              },
+              secondary: {
+                DEFAULT: '#9c27b0',
+                light: '#ba68c8',
+                dark: '#7b1fa2',
+              },
+              success: {
+                DEFAULT: '#2e7d32',
+                light: '#4caf50',
+                dark: '#1b5e20',
+              },
+              warning: {
+                DEFAULT: '#ed6c02',
+                light: '#ff9800',
+                dark: '#e65100',
+              },
+              error: {
+                DEFAULT: '#d32f2f',
+                light: '#ef5350',
+                dark: '#c62828',
+              },
+              slate: {
+                ...tailwind.theme.colors.slate,
+                850: '#162134'
+              }
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.548.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-900 text-slate-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
